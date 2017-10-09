@@ -1,0 +1,71 @@
+{
+  "en": {
+    "translation": {
+      "menu": {
+        "header": "Purshase by credit card",
+        "purshase": "Purshase",
+        "viewPurshases": "View purshases"
+      },
+      "forms": {
+        "purshase": {
+          "expDate": "Expiration date",
+          "buy": "Buy",
+          "operationSucceed": "Purchase completed successfully",
+          "operationFailed": "Error while making a purchase. Please try again later.",
+          "notAllFieldsIsValid": "Not all fields are filled in correctly"
+        },
+        "editViewPurshase": {
+          "caption": "Purchases",
+          "cardholder": "Cardholder name",
+          "cardNumber": "Card number",
+          "operations": {
+            "save": "Save",
+            "edit": "Edit",
+            "cancel": "Cancel"
+          },
+          "operationFailed": "Error while saving purchase changes. Please try again later."
+        },
+        "loading": "Loading..."
+      },
+      "models": {
+        "purshase": {
+          "number": "Order number",
+          "price": "Price",
+          "currency": "Currency",
+          "creditCard": "Card data",
+          "createTime": "Date"
+        },
+        "creditCard": {
+          "number": "Number",
+          "cvv": "CVV",
+          "cardholder": "Cardholder name"
+        }
+      },
+      "validation": {
+        "creditCard": {
+          "number": "Required card number",
+          "cardholder": "Required cardholder name"
+        }
+      },
+      "calendar": {
+        "months": {
+          "1": "January",
+          "2": "February",
+          "3": "March",
+          "4": "April",
+          "5": "May",
+          "6": "June",
+          "7": "July",
+          "8": "August",
+          "9": "September",
+          "10": "October",
+          "11": "November",
+          "12": "December"
+        }
+      },
+      "locales": {
+        "changeLanguageServerError": "Error while changing language. Please try again later."
+      }
+    }
+  }
+}

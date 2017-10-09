@@ -1,0 +1,20 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@using TestTask.PurshaseByCreditCard.Constants
+@inject IViewLocalizer Localizer
+@inject IHtmlLocalizer<TestTask.PurshaseByCreditCard.SharedResource> SharedLocalizer
+@{
+    ViewData["Title"] = SharedLocalizer[CResources.HomeTitle];
+}
+
+<link rel="stylesheet" href="~/Styles/Start.css" />
+
+<div id="react-app">
+    <div class="react-app-start">
+        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+        <span>@SharedLocalizer[CResources.LoadingCaption]</span>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/dist/main.js" asp-append-version="true"></script>
+}
