@@ -42,6 +42,7 @@ div.purshase-loading {
 }
 
 .edit-view-purshase th.operations {
+    min-width: 95px;
     width: 95px;
 }
 
