@@ -62,16 +62,16 @@ class EditViewRow extends React.Component<EditViewRowProp, EditViewRowState> {
   onSaveClick() {
     if (this.state.editData) {
       let requestParams = {
-        method: 'POST',
+        method: 'PUT',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(PurshasePut.getFromPurshase(this.state.editData))
       };
-      fetch('api/Purshase/Put', requestParams).then(response => {
+      fetch('api/Purshase', requestParams).then(response => {
         switch (response.status) {
-          case 201:
+          case 200:
           case 422:
             return response.json() as Promise<PurshasePostResult>;
           default:

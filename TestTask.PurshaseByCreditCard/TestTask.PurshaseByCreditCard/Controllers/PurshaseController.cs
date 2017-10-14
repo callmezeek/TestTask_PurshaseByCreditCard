@@ -135,7 +135,7 @@
         /// </summary>
         /// <param name="value">Данные покупки.</param>
         /// <returns>Результат выполнения покупки.</returns>
-        [HttpPost("[action]")]
+        [HttpPut]
         public async Task<JsonResult> Put([FromBody]PurshasePut value)
         {
             if (value == null) return GetResultByCodeAndData(400);
@@ -164,7 +164,7 @@
                     await _context.SaveChangesAsync();
                 }
 
-                return GetResultByCodeAndData(201, pResult);
+                return GetResultByCodeAndData(200, pResult);
             }
             catch (Exception e)
             {
